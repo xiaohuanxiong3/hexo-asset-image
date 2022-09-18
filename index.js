@@ -11,7 +11,7 @@ hexo.extend.filter.register('after_post_render', function(data){
   var config = hexo.config;
   if(config.post_asset_folder){
     	var link = data.permalink;
-	if(version.length > 0 && Number(version[0]) == 3)
+	if(version.length > 0)
 	   var beginPos = getPosition(link, '/', 1) + 1;
 	else
 	   var beginPos = getPosition(link, '/', 3) + 1;
